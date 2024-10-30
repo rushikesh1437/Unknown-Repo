@@ -1,0 +1,5 @@
+n = int(input().strip())
+arr = list(map(int, input().strip().split()))
+even_sum = sum(arr[i] for i in range(0, n, 2))
+odd_sum = sum(arr[i] for i in range(1, n, 2))
+print(abs(even_sum - odd_sum))
