@@ -1,0 +1,4 @@
+n = int(input().strip())
+arr = list(map(int, input().strip().split()))
+average = sum(arr) / n
+print(f"{average:.2f}")
