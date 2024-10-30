@@ -1,0 +1,4 @@
+n = int(input().strip())
+digits = [int(d) for d in str(n)]
+disarium_sum = sum(digit ** (index + 1) for index, digit in enumerate(digits))
+print(disarium_sum == n)
