@@ -1,0 +1,5 @@
+n = int(input().strip())
+arr = list(map(int, input().strip().split()))
+even_sum = sum(num for num in arr if num % 2 == 0)
+odd_sum = sum(num for num in arr if num % 2 != 0)
+print(abs(even_sum - odd_sum))
